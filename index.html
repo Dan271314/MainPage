@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh;
+        }
+        /* Styling for dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(189, 108, 108, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #000000;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>TV RECS</h1>
+    <p>Insert</p>
+    <h2>Mood</h2>
+
+    <!-- Define the dropdown structure -->
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Depressed</a>
+            <a href="#">Stressed</a>
+            <a href="#">Angry</a>
+            <a href="#">Disgusted</a>
+            <a href="#">Happy</a>
+            <a href="#">Bored</a>
+        </div>
+    </div>
+
+    <h3>Genre</h3>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Action</a>
+            <a href="#">Fantasy</a>
+            <a href="#">Gore</a>
+            <a href="#">Horror</a>
+            <a href="#">Musical</a>
+            <a href="#">Sceince Fiction</a>
+            <a href="#">Western</a>
+            <a href="#">Thriller</a>
+            <a href="#">Romance</a>
+            <a href="#">Drama</a>
+            <a href="#">Adventure</a>
+            <a href="#">Mystery</a>
+        </div>
+    </div>
+
+</body>
+</html>
